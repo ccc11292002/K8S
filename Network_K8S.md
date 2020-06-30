@@ -80,6 +80,31 @@ Network
     - 最小的封裝集合 
     - 自主式Pod
     - 控制器管理的P
+      - ReplicationController
+        - 用來確保容器應用的副本數始終保持在用戶定義
+        - 若多會自動刪除
+        - 若少會自動增加
+      - ReplicaSet
+        - 支持集合式selector
+        - 賦予標籤***
+      - Depolyment
+        - 創建會自動產生RS
+        - 滾動更新
+        - 回滾
+      - HPA
+        - 根據CPU使用來自動擴容POD也是框架一種
+      - StatefulSet
+        - 穩定的持久化存儲
+        - 穩定的網路標誌
+        - 有序部署
+        - 有序收縮
+      - DaemonSet
+      - job
+        - 重新執行，非正常退出任務
+        - 可以指定完成幾次才會退出，不重複執行
+        - cron job 可以設時執行
+      - RR
+        - 依序循環(round-robin, RR)排班演算法是特別為了分時作業系統而設計的，這種排班方法和FCFS排班法相類似，但是加入可搶先的規則以便讓行程互相交換使用CPU
   - IPVS
     - 運行在LVS下的提供負載平衡功能的一種技術 
   - LAMP
