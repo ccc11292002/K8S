@@ -80,6 +80,11 @@ Network
     - 最小的封裝集合 
   - IPVS
     - 運行在LVS下的提供負載平衡功能的一種技術 
+  - LAMP
+    - Linux，作業系統
+    - Apache，網頁伺服器
+    - MariaDB或MySQL，資料庫管理系統（或者資料庫伺服器）
+    - PHP、Perl或Python，手稿語言
 
 ---
 
